@@ -30,7 +30,7 @@ async def main() -> None:
 
     if type(token) is not str:
         print("Error: TELEGRAM_API_KEY environment variable is not set.")
-        token = "7818556085:AAF-l7Vs0fdPiV4RLpETFqg81cvHfqgaJ3M"
+        return
 
     bot = Bot(token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     await dp.start_polling(bot)
